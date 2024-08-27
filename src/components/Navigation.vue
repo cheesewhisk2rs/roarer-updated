@@ -21,7 +21,6 @@ const route = useRoute();
 
 const cloudlinkStore = useCloudlinkStore();
 const isDevStore = useIsDevStore();
-const settingsStore = useSettingsStore();
 </script>
 
 <template>
