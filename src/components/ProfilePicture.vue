@@ -28,7 +28,7 @@ const props = withDefaults(
   },
 );
 
-const imageClass = props.class + " rounded-xl";
+const imageClass = props.class + " rounded-xl object-cover";
 
 const pfpLink =
   "pfp" in props.pfp && props.pfp.pfp
