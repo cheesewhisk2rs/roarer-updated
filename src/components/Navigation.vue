@@ -30,9 +30,6 @@ const settingsStore = useSettingsStore();
       <div class="flex flex-wrap items-center gap-x-4">
         <h1 class="text-3xl font-bold">
           <span :style="{ color: '#ffffff' }">Roarer</span>
-          <span :style="{ color: '#ff8d00' }">
-            {{ settingsStore.isJoker ? "🤡" : "o" }}
-          </span>
         </h1>
         <Login />
       </div>
