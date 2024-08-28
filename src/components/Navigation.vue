@@ -29,14 +29,14 @@ const settingsStore = useSettingsStore();
     <div class="mb-2 flex flex-col items-center gap-1">
       <div class="flex flex-wrap items-center gap-x-4">
         <h1 class="text-3xl font-bold">
-          <span :style="{ color: '#e50000' }">R</span>
-          <span :style="{ color: '#ff8d00' }">
+          <span :style="{ color: '#ffffff' }">R</span>
+          <span :style="{ color: '#ffffff' }">
             {{ settingsStore.isJoker ? "🤡" : "o" }}
           </span>
-          <span :style="{ color: '#ffee00' }">a</span>
-          <span :style="{ color: '#028121' }">r</span>
-          <span :style="{ color: '#004cff' }">e</span>
-          <span :style="{ color: '#770088' }">r</span>
+          <span :style="{ color: '#ffffff' }">a</span>
+          <span :style="{ color: '#ffffff' }">r</span>
+          <span :style="{ color: '#ffffff' }">e</span>
+          <span :style="{ color: '#ffffff' }">r</span>
           🏳️‍🌈
         </h1>
         <Login />
