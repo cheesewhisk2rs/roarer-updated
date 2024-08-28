@@ -37,7 +37,6 @@ const settingsStore = useSettingsStore();
           <span :style="{ color: '#ffffff' }">r</span>
           <span :style="{ color: '#ffffff' }">e</span>
           <span :style="{ color: '#ffffff' }">r</span>
-          🏳️‍🌈
         </h1>
         <Login />
       </div>
