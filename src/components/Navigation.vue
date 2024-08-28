@@ -14,6 +14,22 @@ import Login from "./Login.vue";
 import { tabs } from "../lib/tabs";
 import { useCloudlinkStore } from "../stores/cloudlink";
 import { useIsDevStore } from "../stores/isDev";
+<script setup lang="ts">
+import { useI18n } from "vue-i18n";
+import { useRoute } from "vue-router";
+import { ChevronDown } from "lucide-vue-next";
+import {
+  DropdownMenuRoot,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuPortal,
+  DropdownMenuTrigger,
+} from "radix-vue";
+import { RouterLink } from "vue-router";
+import Login from "./Login.vue";
+import { tabs } from "../lib/tabs";
+import { useCloudlinkStore } from "../stores/cloudlink";
+import { useIsDevStore } from "../stores/isDev";
 import { useSettingsStore } from "../stores/settings";
 
 const { t } = useI18n();
@@ -21,6 +37,7 @@ const route = useRoute();
 
 const cloudlinkStore = useCloudlinkStore();
 const isDevStore = useIsDevStore();
+const settingsStore = useSettingsStore();
 </script>
 
 <template>
@@ -28,7 +45,15 @@ const isDevStore = useIsDevStore();
     <div class="mb-2 flex flex-col items-center gap-1">
       <div class="flex flex-wrap items-center gap-x-4">
         <h1 class="text-3xl font-bold">
-          <span :style="{ color: '#ffffff' }">Roarer</span>
+          <span :style="{ color: '#e50000' }">R</span>
+          <span :style="{ color: '#ff8d00' }">
+            {{ settingsStore.isJoker ? "🤡" : "o" }}
+          </span>
+          <span :style="{ color: '#ffee00' }">a</span>
+          <span :style="{ color: '#028121' }">r</span>
+          <span :style="{ color: '#004cff' }">e</span>
+          <span :style="{ color: '#770088' }">r</span>
+          🏳️‍🌈
         </h1>
         <Login />
       </div>
