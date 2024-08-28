@@ -167,7 +167,7 @@ effect(async () => {
 const copiedLink = ref(false);
 const copy = async () => {
   await navigator.clipboard.writeText(
-    `https://roarer-uodated.pages.dev/roarer#/posts/${post.post_id}`,
+    `https://roarer-updated.pages.dev/roarer#/posts/${post.post_id}`,
   );
   copiedLink.value = true;
   setTimeout(() => {
