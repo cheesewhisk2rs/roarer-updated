@@ -14,7 +14,7 @@ import Login from "./Login.vue";
 import { tabs } from "../lib/tabs";
 import { useCloudlinkStore } from "../stores/cloudlink";
 import { useIsDevStore } from "../stores/isDev";
-<script setup lang="ts">
+<script setup lang="ts">;
 import { useI18n } from "vue-i18n";
 import { useRoute } from "vue-router";
 import { ChevronDown } from "lucide-vue-next";
